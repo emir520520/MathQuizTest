@@ -1,0 +1,58 @@
+body{
+	background:url("../images/math.jpg");
+	background-size:cover;
+	background-color:rgba(255,255,255,0.5);
+	background-blend-mode:lighten;
+}
+
+#bd{
+	display:grid;
+	grid:
+	'. h h h h .'
+	'. . a a . .'
+	'. b b b b .'
+	'. . B B . .';
+}
+
+
+#h1{
+	font-size:3.5em;
+	font-weight:bold;
+	grid-area:h;
+	text-align:center;
+}
+
+#Instruction{
+	grid-area:a;
+	font-size:3em;
+	font-weight:bold;
+	text-align:center;
+
+}
+
+#InstructionAnswer{
+	grid-area:b;
+	font-size:2em;
+	text-align:center;
+}
+
+#BB{
+	grid-area:B;
+	display:flex;
+	justify-content:space-around;
+}
+
+#B1{
+	width:15vw;
+	height:10vh;
+	font-size:3em;
+}
+
+.clickHere {
+	cursor: help;
+	color: darkred;
+}
+            
+.clickHere:hover {
+	color: darkcyan;
+}

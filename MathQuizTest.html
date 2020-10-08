@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Yuxiao Fang</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+	<div id="bd">
+		<h1 id="h1">Quiz</h1>
+		<p id="Instruction">For instruction: <span onclick="clickInstruction()" class="clickHere">click here</span></p>
+		<p id="InstructionAnswer"><p>
+		<div id="BB">
+			<a href="./page/questionPage.html"><button id="B1" onmouseover="mouseOver()" onmouseout="mouseOut()">Start Quiz</button></a>
+		</div>
+	</div>
+	
+	<script>
+		var Ans=document.getElementById("InstructionAnswer");
+		function clickInstruction(){
+			ans="For this multiple choice Quiz, there are five questions in total.  For each question, there are four optionsand there is only one right option which count for ONE mark.  The full mark of this Quiz is 5.<strong>You ONLY have one chance to answer each question</strong>";
+			Ans.innerHTML=ans;
+		}
+		
+		function mouseOver(){
+			document.getElementById("B1").style.color = "red";
+		}
+		
+		function mouseOut(){
+			document.getElementById("B1").style.color = "black";
+		}
+	</script>
+</body>
+</html>

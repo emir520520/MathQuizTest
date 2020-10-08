@@ -1,0 +1,135 @@
+body{
+	background:url("../images/math.jpg");
+	background-size:cover;
+	background-color:rgba(255,255,255,0.5);
+	background-blend-mode:lighten;
+}
+
+
+#Body{
+	display:grid;
+	grid:
+	'. h h h h .'
+	'n n . . . .'
+	'Q Q Q Q Q Q'
+	'o o o o o o'
+	'm m m . . .'
+	'ans ans ans ans ans ans'
+	'b b b b b b'
+	's s s s s s';
+}
+
+h1{
+	font-size:3.5em;
+	font-weight:bold;
+	grid-area:h;
+	text-align:center;
+}
+
+#questionNumber{
+	grid-area:n;
+	font-size:3em;
+	font-weight:bold;
+}
+
+#question{
+	grid-area:Q;
+	font-size:2.8em;
+	text-align:center;
+}
+
+#ops{
+	grid-area:o;
+	display:flex;
+	justify-content:center;
+}
+
+#button1{
+	width:11vw;
+	height:8vh;
+	font-size:2.3em;
+	font-weight:bold;
+	margin:15px;
+}
+
+#button2{
+	width:11vw;
+	height:8vh;
+	font-size:2.3em;
+	font-weight:bold;
+	margin:15px;
+}
+
+#button3{
+	width:11vw;
+	height:8vh;
+	font-size:2.3em;
+	font-weight:bold;
+	margin:15px;
+}
+
+#button4{
+	width:11vw;
+	height:8vh;
+	font-size:2.3em;
+	font-weight:bold;
+	margin:15px;
+}
+
+
+#Mark{
+	grid-area:m;
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+#buttons{
+	grid-area:b;
+	display:flex;
+	justify-content:center;
+}
+
+#pre{
+	width:15vw;
+	height:11vh;
+	font-size:2.3em;
+	font-weight:bold;
+	margin:15px;
+}
+
+#next{
+	width:15vw;
+	height:11vh;
+	font-size:2.3em;
+	font-weight:bold;
+	margin:15px;
+}
+
+#subButton{
+	grid-area:s;
+	display:flex;
+	justify-content:center;
+}
+
+#sub{
+	width:15vw;
+	height:11vh;
+	font-size:2.3em;
+	font-weight:bold;
+	margin:15px;
+}
+
+#re{
+	width:15vw;
+	height:11vh;
+	font-size:2.3em;
+	font-weight:bold;
+	margin:15px;
+}
+
+#anw{
+	grid-area:ans;
+	font-size:1.5em;
+	font-weight:bold;
+	color:red;
+}

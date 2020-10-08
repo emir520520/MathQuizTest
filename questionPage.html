@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+<head>
+	<<meta charset="UTF-8">
+	<title>Yuxiao Fang</title>
+	<link rel="stylesheet" type="text/css" href="../css/main1.css" />
+</head>
+
+<body>
+	<div id="Body">
+		<h1>Quiz</h1>
+		<p id="questionNumber">Question 1</p>
+		<p id="question">What is the answer for 1+1 ?</p>
+		
+		<div id="ops">
+			<button id="button1" onclick="buttonF(1)">0</button>
+			<button id="button2" onclick="buttonF(2)">1</button>
+			<button id="button3" onclick="buttonF(3)">2</button>
+			<button id="button4" onclick="buttonF(4)">3</button>
+		</div>
+		<p id="Mark">Your mark is: 0</p>
+		<p id="anw"></p>
+		<div id="buttons">
+			<button id="pre" onclick="preFunction()" onmouseover="mouseOver(5)" onmouseout="onmouseOut(5)" disabled>Previous Question</button>
+			<button id="next" onclick="nextFunction()" onmouseover="mouseOver(6)" onmouseout="onmouseOut(6)">Next</button>
+		</div>
+		<div id="subButton">
+			<button id="sub" onclick="submit()" onmouseover="mouseOver(7)" onmouseout="onmouseOut(7)">Submit</button>
+			<button id="re" onclick="restart()" onmouseover="mouseOver(8)" onmouseout="onmouseOut(8)">Restart</button>
+		</div>
+	</div>
+	
+	<script>
+		var QN=document.getElementById("questionNumber");
+		var qn=1;
+		var mark=0;
+		var M=document.getElementById("Mark");
+		var Q=document.getElementById("question");
+		var B1=document.getElementById("button1");
+		var B2=document.getElementById("button2");
+		var B3=document.getElementById("button3");
+		var B4=document.getElementById("button4");
+		var P=document.getElementById("pre");
+		var N=document.getElementById("next");
+		var Anw=document.getElementById("anw");
+		var QQ1=0;
+		var QQ2=0;
+		var QQ3=0;
+		var QQ4=0;
+		var QQ5=0;
+		
+		function buttonF(x){
+			if(qn==1){
+				if(x==1){
+					QQ1=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==2){
+					QQ1=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==3){
+					QQ1=1;
+					mark=mark+1;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==4){
+					QQ1=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==2){
+				if(x==1){
+					QQ2=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==2){
+					QQ2=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==3){
+					QQ2=1;
+					mark=mark+1;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==4){
+					QQ2=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==3){
+				if(x==1){
+					QQ3=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==2){
+					QQ3=1;
+					mark=mark+1;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==3){
+					QQ3=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==4){
+					QQ3=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==4){
+				if(x==1){
+					QQ4=1;
+					mark=mark+1;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==2){
+					QQ4=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==3){
+					QQ4=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==4){
+					QQ4=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==5){
+				if(x==1){
+					QQ5=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==2){
+					QQ5=1;
+					mark=mark+1;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==3){
+					QQ5=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}else if(x==4){
+					QQ5=1;
+					mark=mark+0;
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}
+			
+			M.innerHTML="Your mark is: "+mark;
+		}
+		
+		function preFunction(){
+			qn=qn-1;
+			B1.disabled=false;
+			B2.disabled=false;
+			B3.disabled=false;
+			B4.disabled=false;
+			N.disabled=false;
+			if(qn==1){
+				Question="What is the answer for 1+1 ?";
+				Button1="0";
+				Button2="1";
+				Button3="2";
+				Button4="3";
+				P.disabled=true;
+				if(QQ1==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==2){
+				Question="What is the answer for 2+2 ?";
+				Button1="2";
+				Button2="3";
+				Button3="4";
+				Button4="5";
+				if(QQ2==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==3){
+				Question="What is the answer for 3+3 ?";
+				Button1="7";
+				Button2="6";
+				Button3="8";
+				Button4="5";
+				if(QQ3==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==4){
+				Question="What is the answer for 4+4 ?";
+				Button1="8";
+				Button2="7";
+				Button3="6";
+				Button4="10";
+				if(QQ4==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==5){
+				Question="What is the answer for 5+5 ?";
+				Button1="9";
+				Button2="10";
+				Button3="11";
+				Button4="12";
+				if(QQ5==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}
+			QN.innerHTML="Question "+qn;
+			Q.innerHTML=Question;
+			B1.innerHTML=Button1;
+			B2.innerHTML=Button2;
+			B3.innerHTML=Button3;
+			B4.innerHTML=Button4;
+		}	
+
+		function nextFunction(){
+			qn=qn+1;
+			B1.disabled=false;
+			B2.disabled=false;
+			B3.disabled=false;
+			B4.disabled=false;
+			P.disabled=false;
+			if(qn==1){
+				Question="What is the answer for 1+1 ?";
+				Button1="0";
+				Button2="1";
+				Button3="2";
+				Button4="3";
+				if(QQ1==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==2){
+				Question="What is the answer for 2+2 ?";
+				Button1="2";
+				Button2="3";
+				Button3="4";
+				Button4="5";
+				if(QQ2==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==3){
+				Question="What is the answer for 3+3 ?";
+				Button1="7";
+				Button2="6";
+				Button3="8";
+				Button4="5";
+				if(QQ3==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==4){
+				Question="What is the answer for 4+4 ?";
+				Button1="8";
+				Button2="7";
+				Button3="6";
+				Button4="10";
+				if(QQ4==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}else if(qn==5){
+				Question="What is the answer for 5+5 ?";
+				Button1="9";
+				Button2="10";
+				Button3="11";
+				Button4="12";
+				N.disabled=true;
+				if(QQ5==1){
+					B1.disabled=true;
+					B2.disabled=true;
+					B3.disabled=true;
+					B4.disabled=true;
+				}
+			}
+			QN.innerHTML="Question"+qn;
+			Q.innerHTML=Question;
+			B1.innerHTML=Button1;
+			B2.innerHTML=Button2;
+			B3.innerHTML=Button3;
+			B4.innerHTML=Button4;
+		}
+		
+		function submit(){
+			y=document.getElementById("Mark");
+			if(mark==0){
+				Y="You need more practise, hope you can do better next time!!!";
+			}else if(mark==1){
+				Y="You have a big space to improve your self. So practise it.";
+			}else if(mark==2){
+				Y="You did not bad, but you still can improve yourslef.";
+			}else if(mark==4){
+				Y="You did well. Hope you can get full mark next time.";
+			}else{
+				Y="You did very well. Keep it up.";
+			}
+			ANW="Answer: Q1:2 Q2:4 Q3:6 Q4:8 Q5:10";
+			Anw.innerHTML=ANW;
+			y.innerHTML=Y;
+		}
+		
+		function restart(){
+			qn=1;
+			mark=0;
+			QQ1=0;
+			QQ2=0;
+			QQ3=0;
+			QQ4=0;
+			QQ5=0;
+			
+			Question="What is the answer for 1+1 ?";
+			Button1="0";
+			Button2="1";
+			Button3="2";
+			Button4="3";
+			
+			Anw.innerHTML="";
+			
+			P.disabled=true;
+			N.disabled=false;
+			B1.disabled=false;
+			B2.disabled=false;
+			B3.disabled=false;
+			B4.disabled=false;
+			
+			Y="Your mark is: ";
+			y.innerHTML=Y;
+			
+			QN.innerHTML="Question "+qn;
+			Q.innerHTML=Question;
+			B1.innerHTML=Button1;
+			B2.innerHTML=Button2;
+			B3.innerHTML=Button3;
+			B4.innerHTML=Button4;
+		}
+		
+		function mouseOver(x){
+			if(x==5){
+				document.getElementById("pre").style.color = "red";
+			}else if(x==6){
+				document.getElementById("next").style.color = "red";
+			}else if(x==7){
+				document.getElementById("sub").style.color = "red";
+			}else if(x==8){
+				document.getElementById("re").style.color = "red";
+			}
+		}
+		
+		function onmouseOut(y){
+			if(y==5){
+				document.getElementById("pre").style.color = "black";
+			}else if(y==6){
+				document.getElementById("next").style.color = "black";
+			}else if(y==7){
+				document.getElementById("sub").style.color = "black";
+			}else if(y==8){
+				document.getElementById("re").style.color = "black";
+			}
+		}
+	</script>
+	</body>
+</html>
